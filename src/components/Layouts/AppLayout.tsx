@@ -1,4 +1,4 @@
-import { Outlet } from "react-router";
+import { Outlet, Route, Routes } from "react-router";
 
 import Header from "@/components/Aside/Aside";
 
@@ -15,7 +15,9 @@ const AppLayout = () => {
           <Outlet />
         </div>
         <div className={styles.app__window}>
-          <PageChatId />
+          <Routes>
+                <Route path="/chats/:chatId" element={<PageChatId />} />
+          </Routes>
         </div>
       </div>
     </div>

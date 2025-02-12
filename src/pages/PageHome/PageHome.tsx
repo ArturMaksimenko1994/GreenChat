@@ -4,7 +4,7 @@ const PageHome: React.FC = () => {
   return (
     <>
       <div className="container">
-        <section className={styles.block}>PageHome</section>
+        <section className={styles.block}>Слабенький</section>
       </div>
     </>
   );

@@ -36,7 +36,7 @@ export const routes = [
     ),
   },
   {
-    path: "/chats",
+    path: "/chats/*",
     element: (
       <ProtectedRoute>
         <PageChats />
