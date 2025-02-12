@@ -1,0 +1,123 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  border-radius: 8px;
+  line-height: 150%;
+  text-decoration: none;
+  transition: background-color .3s, color .3s;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+
+  i {
+    display: flex;
+    width: 20px;
+
+    svg {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &.primary {
+    color: #ffffff;
+    box-shadow: $shadow-xs;
+    background-color: $brand-600;
+
+    &:hover {
+      background-color: $brand-700;
+    }
+  }
+
+  &.primary-link {
+    color: $brand-600;
+
+    &:hover {
+      color: $brand-800;
+    }
+  }
+
+  &.secondary {
+    color: $gray-700;
+    border: 1px solid $gray-300;
+    background-color: #ffffff;
+    box-shadow: $shadow-xs;
+
+    &:hover {
+      background-color: $gray-50;
+      color: $gray-800;
+    }
+  }
+
+  &.secondary-link {
+    color: $gray-600;
+
+    &:hover {
+      color: $gray-700;
+    }
+  }
+
+  &.danger {
+    color: #ffffff;
+    box-shadow: $shadow-xs;
+    background-color: $error-600;
+
+    &:hover {
+      background-color: $error-700;
+    }
+  }
+
+  &.danger-link {
+    color: $error-700;
+
+    &:hover {
+      color: $error-800;
+    }
+  }
+
+  &.xs {
+    gap: 4px;
+    padding: 8px 14px;
+    font-size: 14px;
+
+    i {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  &.sm {
+    gap: 4px;
+    padding: 10px 16px;
+    font-size: 14px;
+  }
+
+  &.md {
+    gap: 6px;
+    padding: 10px 18px;
+    font-size: 16px;
+  }
+
+  &.lg {
+    gap: 6px;
+    padding: 12px 20px;
+    font-size: 16px;
+  }
+
+  &.xl {
+    gap: 10px;
+    padding: 16px 28px;
+    font-size: 18px;
+  }
+
+  &.full-width {
+    width: 100%;
+  }
+
+}

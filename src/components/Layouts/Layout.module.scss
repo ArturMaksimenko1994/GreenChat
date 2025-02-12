@@ -1,0 +1,35 @@
+.app {
+  height: 100vh;
+  background-color: #262524;
+  padding: 22px;
+
+  &__row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1600px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    box-shadow: 0px 6px 18px rgba(11, 20, 26, 0.05);
+  }
+  &__panel {
+    max-width: 480px;
+    width: 100%;
+    height: 100%;
+    background-color: #111b21;
+  }
+  &__window {
+    flex: 1;
+    background-image: url(/src/assets/img/fon/background-chat.png);
+    height: 100%;
+    opacity: .06;
+  }
+}
+
+.auth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}

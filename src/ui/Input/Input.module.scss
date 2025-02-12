@@ -1,0 +1,57 @@
+.input {
+
+  &__row {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    border-radius: 8px;
+  }
+
+  &__column {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  &__custom {
+    position: relative;
+  }
+
+  &__ghost {
+    width: 100%;
+    padding: 10px 14px;
+    border: 2px solid $gray-400;
+    outline: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: $gray-600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: border 0.3s, box-shadow 0.3s, color 0.3s;
+
+    &:focus {
+      border: 2px solid $brand-500;
+      box-shadow: $shadow-md;
+      color: $gray-900;
+    }
+
+    &:active {
+      border: 2px solid $brand-700;
+    }
+
+    &:invalid {
+      border: 2px solid $error-500;
+    }
+
+    &:valid {
+      color: $gray-900;
+    }
+
+    &:not(:focus) {
+      color: $gray-500;
+    }
+  }
+
+
+}

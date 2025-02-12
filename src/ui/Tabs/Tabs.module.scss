@@ -1,0 +1,34 @@
+.tabs {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  &__nav {
+    padding: 4px;
+    border: 1px solid $gray-200;
+    background-color: $gray-25;
+    border-radius: $radius-lg;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  &__button {
+    padding: 8px 12px;
+    color: $gray-500;
+    border-radius: $radius-sm;
+    transform: background-color 0.3s;
+    cursor: pointer;
+
+    &.active {
+      background-color: #ffffff;
+      color: $gray-700;
+      box-shadow: $shadow-sm;
+    }
+  }
+
+  &__content {
+    padding: 0;
+  }
+}

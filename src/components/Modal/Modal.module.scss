@@ -1,0 +1,61 @@
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 11;
+
+  &__block {
+    position: relative;
+    max-width: 400px;
+    width: 100%;
+    padding: 24px;
+    border-radius: 12px;
+    background: #ffffff;
+    box-shadow: $shadow-xl;
+    transition: opacity 0.3s, transform 0.3s;
+    z-index: 12;
+  }
+
+  &__close {
+    position: absolute;
+    top: 26px;
+    right: 26px;
+    width: 24px;
+    height: 24px;
+    stroke: $gray-600;
+    cursor: pointer;
+    background-color: #F1F6FC;
+    stroke-width: 1.5px;
+    transition: stroke 0.3s ease;
+
+    &:hover {
+      stroke: #AF2727;
+    }
+  }
+
+  &__title {
+    margin: 20px 0 8px 0;
+    color: $gray-900;
+    font-size: 22px;
+    line-height: 156%;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  &__overlay {
+    position: fixed;
+    inset: 0;
+    backdrop-filter: blur(6px);
+    background-color: rgba(16, 24, 40, 0.7);
+    z-index: 2;
+    cursor: pointer;
+    transition: backdrop-filter 0.3s, background-color 0.3s;
+  }
+}
