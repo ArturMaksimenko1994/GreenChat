@@ -1,4 +1,58 @@
+.page {
+  &__heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 10px 16px 16px;
+  }
+
+  &__title {
+    font-size: 22px;
+  }
+}
+
 .chats {
-    background-color: red;
+  max-height: calc(100vh - 102px);
+  overflow-y: auto;
+  padding: 0;
+  margin-right: 2px;
+}
+
+.card {
+  padding: 0 16px 0 12px;
+  display: block;
+  &__row {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
     width: 100%;
+    height: 72px;
+  }
+  &__img {
+    width: 49px;
+    height: 49px;
+  }
+  &__data {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 2px;
+    padding: 4px 0;
+    flex: 1;
+    border-top: 1px solid #e9edef;
+    justify-content: center;
+  }
+  &__name {
+    font-size: 17px;
+    color: #111b21;
+  }
+  &:first-child .card__name {
+    border-top: none;
+  }
+  &__message {
+    font-size: 14px;
+    color: #667781;
+  }
 }

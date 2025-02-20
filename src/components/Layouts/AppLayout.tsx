@@ -1,6 +1,6 @@
 import { Outlet, Route, Routes } from "react-router";
 
-import Header from "@/components/Aside/Aside";
+import Aside from "@/components/Aside/Aside";
 
 import PageChatId from "@/pages/PageChatId/PageChatId";
 
@@ -10,7 +10,7 @@ const AppLayout = () => {
   return (
     <div className={styles.app}>
       <div className={styles.app__row}>
-        <Header />
+        <Aside />
         <div className={styles.app__panel}>
           <Outlet />
         </div>

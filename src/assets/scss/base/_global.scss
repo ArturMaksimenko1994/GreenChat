@@ -28,3 +28,24 @@
     max-width: 860px;
   }
 }
+
+.custom-scrolling::-webkit-scrollbar {
+  height: 10px;
+  width: 6px;
+}
+
+.custom-scrolling::-webkit-scrollbar-track {
+  background: #FFFFFF;
+  border-radius: 2px;
+}
+
+.custom-scrolling::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  background-color: #ced0d1;
+  border: 2px solid #ced0d1;
+}
+
+.custom-scrolling::-webkit-scrollbar-thumb:horizontal {
+  background-color: #ced0d1;
+  border-radius: 2px;
+}

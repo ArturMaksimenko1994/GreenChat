@@ -30,6 +30,20 @@ export const getlogin = async (
   }
 };
 
+// Функция для получения контактов
+export const getfetchContacts = async (idInstance:string, apiTokenInstance:string) => {
+  try {
+    const response = await fetch(
+      `${API_URL}/waInstance${idInstance}/getContacts/${apiTokenInstance}`
+    );
+    const data = await response.json();
+    return data; // Возвращаем полученные данные
+  } catch (error) {
+    console.error("Ошибка загрузки контактов:", error);
+    throw error; // Пробрасываем ошибку для обработки в компоненте
+  }
+};
+
 // Функция для получения данных пользователя
 // export const getUserData = async (token: string) => {
 //   const response = await fetch(`${BASE_URL}/wp-json/wp/v2/users/me`, {

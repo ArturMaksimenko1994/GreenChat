@@ -65,11 +65,13 @@ const PageLogin = () => {
         </Button>
       </form>
 
-      {error && (
-        <div className={styles.error}>
-          <p>{error}</p>
-        </div>
-      )}
+      <div className={styles.error}>
+        <p
+          className={`${styles.error__message} ${error ? styles.active : ""
+            }`}
+          dangerouslySetInnerHTML={error ? { __html: error } : undefined}
+        ></p>
+      </div>
     </div>
   );
 };

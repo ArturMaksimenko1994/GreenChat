@@ -3,8 +3,9 @@
   flex-direction: column;
   height: 100%;
   padding: 10px 12px;
-  background-color: #202c33;
-
+  background-color: #f0f2f5;
+  border-right: 1px solid #e9edef;
+  
   &__top {
     flex: 1;
     display: flex;

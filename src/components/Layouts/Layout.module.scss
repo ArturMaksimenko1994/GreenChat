@@ -1,7 +1,20 @@
 .app {
   height: 100vh;
-  background-color: #262524;
   padding: 22px;
+  background-color: #fdf5ec;
+  position: relative;
+  z-index: 1;
+
+  &::after {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -10;
+    width: 100%;
+    height: 127px;
+    content: "";
+    background-color: #00a884;
+  }
 
   &__row {
     display: flex;
@@ -11,19 +24,20 @@
     width: 100%;
     height: 100%;
     margin: 0 auto;
-    box-shadow: 0px 6px 18px rgba(11, 20, 26, 0.05);
+    box-shadow: $shadow-3xl;
   }
   &__panel {
     max-width: 480px;
     width: 100%;
     height: 100%;
-    background-color: #111b21;
+    background-color: #ffffff;
   }
+
   &__window {
     flex: 1;
     background-image: url(/src/assets/img/fon/background-chat.png);
     height: 100%;
-    // opacity: .06;
+    background-color: #efeae2;
   }
 }
 
@@ -32,4 +46,5 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background-color: #fdf5ec;
 }
